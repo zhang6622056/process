@@ -20,11 +20,14 @@ public class DefaultProcessChain implements ProcessChain{
     }
 
 
-
+    /****
+     * 初始化一个流程链
+     * @param chainName
+     */
     private void init(String chainName){
-        if (StringUtils.isBlank(chainName)) throw new ProcessChainException("chainName must not null..");
+        if (StringUtils.isBlank(chainName)) throw new ProcessChainException("chainName must not null");
 
-
+        
 
 
 
